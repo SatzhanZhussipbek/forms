@@ -20,14 +20,14 @@ public class FormScreen extends Screen {
     private UiReportRunner uiReportRunner;
     @Autowired
     private TextField<String> nameField;
-    @Autowired
-    private DateField<LocalDate> dateOfBirth;
+    /*@Autowired
+    private DateField<LocalDate> dateOfBirth;*/
 
     @Subscribe("printBtn")
     public void onPrintBtnClick(Button.ClickEvent event) {
         uiReportRunner.byReportCode("form")
                 .addParam("name", nameField.getValue())
-                .addParam("date of birth", dateOfBirth.getValue())
+                //.addParam("date of birth", dateOfBirth.getValue())
                 .runAndShow();
     }
 }
