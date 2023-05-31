@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://jmix.io/schema/ui/window"
+        caption="msg://formScreen.caption">
+    <layout expand="spacer" spacing="true">
+        <textField id="nameField" caption="Name" datatype="string"/>
+        <dateField id="dateOfBirth" caption="Date of Birth" datatype="localDate"/>
+        <!--<textField id="grade" caption="School grade" datatype="string"/>
+        <textField id="gender" caption="Gender" datatype="string"/>
+        <textField id="needs" caption="Special Needs" datatype="string"/>
+        <textField id="city" caption="City" datatype="string"/>
+        <textField id="district" caption="District" datatype="string"/>
+        <textField id="street" caption="Street" datatype="string"/>
+        <textField id="house" caption="House" datatype="string"/>
+        <textField id="apartment" caption="Apartment" datatype="string"/>
+        <textField id="mobilePhone" caption="Mobile phone number" datatype="string"/>
+        <textField id="fatherName" caption="Father's name" datatype="string"/>
+        <textField id="fatherDateOfBirth" caption="Father's date of birth" datatype="string"/>
+        <textField id="fatherAge" caption="Father's age" datatype="string"/>
+        <textField id="fatherFamilyStatus" caption="Father's family status" datatype="string"/>
+        <textField id="fatherCity" caption="Father's city" datatype="string"/>
+        <textField id="fatherDistrict" caption="Father's district" datatype="string"/>
+        <textField id="fatherStreet" caption="Father's street" datatype="string"/>
+        <textField id="fatherHouse" caption="Father's house" datatype="string"/>
+        <textField id="fatherApartment" caption="Father's apartment" datatype="string"/>
+        <textField id="motherName" caption="Mother's name" datatype="string"/>
+        <textField id="motherDateOfBirth" caption="Mother's date of birth" datatype="string"/>
+        <textField id="motherAge" caption="Mother's age" datatype="string"/>
+        <textField id="motherFamilyStatus" caption="Mother's family status" datatype="string"/>
+        <textField id="motherCity" caption="Mother's city" datatype="string"/>
+        <textField id="motherDistrict" caption="Mother's district" datatype="string"/>
+        <textField id="motherStreet" caption="Mother's street" datatype="string"/>
+        <textField id="motherHouse" caption="Mother's house" datatype="string"/>
+        <textField id="motherApartment" caption="Mother's apartment" datatype="string"/>
+        <textField id="stepParent" caption="Living with stepmother/stepfather" datatype="string"/>
+        <textField id="otherResidentName" caption="Other resident's name" datatype="string"/>
+        <textField id="otherResidentAge" caption="Other resident's age" datatype="string"/>
+        <textField id="kinshipDegree" caption="Kinship degree" datatype="string"/>
+        <textField id="workPlace" caption="Place of work/education" datatype="string"/>
+        <dateField id="interviewDate" caption="Date of interview with the child/family" datatype="date"/>
+        <textField id="intervieweeName" caption="Full name of the interviewee" datatype="string"/>
+        <textField id="interviewOrganizer" caption="Name of the organization" datatype="string"/>
+        <textField id="interviewedPerson" caption="Relation to the student" datatype="string"/>
+        <textField id="intervieweeContact" caption="Interviewee's contact" datatype="string"/>-->
+        <button id="printBtn" caption="Print"/>
+        <label id="spacer"/>
+    </layout>
+</window>
