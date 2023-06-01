@@ -1,5 +1,7 @@
 package com.company.orgforms.screen.form;
 
+import io.jmix.core.DataManager;
+import io.jmix.reports.entity.ReportTemplate;
 import io.jmix.reportsui.runner.UiReportRunner;
 import io.jmix.ui.component.Button;
 import io.jmix.ui.component.DateField;
@@ -17,17 +19,22 @@ import java.time.LocalDate;
 public class FormScreen extends Screen {
 
     @Autowired
+    protected DataManager dataManager;
+    @Autowired
     private UiReportRunner uiReportRunner;
     @Autowired
     private TextField<String> nameField;
-    @Autowired
-    private DateField<LocalDate> dateOfBirth;
+
+    /*@Autowired
+    private DateField<LocalDate> dateOfBirth;*/
+
 
     @Subscribe("printBtn")
     public void onPrintBtnClick(Button.ClickEvent event) {
         uiReportRunner.byReportCode("form")
                 .addParam("name", nameField.getValue())
-                .addParam("date of birth", dateOfBirth.getValue())
+
+                //.addParam("date of birth", dateOfBirth.getValue())
                 .runAndShow();
     }
 }

@@ -3,7 +3,10 @@
         caption="msg://formScreen.caption">
     <layout expand="spacer" spacing="true">
         <textField id="nameField" caption="Name" datatype="string"/>
-        <dateField id="dateOfBirth" caption="Date of Birth" datatype="localDate"/>
+
+        <!--<dateField id="dateOfBirth" caption="Date of Birth" datatype="localDate"/>-->
+
+       <!-- <dateField id="dateOfBirth" caption="Date of Birth" datatype="localDate"/>-->
         <!--<textField id="grade" caption="School grade" datatype="string"/>
         <textField id="gender" caption="Gender" datatype="string"/>
         <textField id="needs" caption="Special Needs" datatype="string"/>

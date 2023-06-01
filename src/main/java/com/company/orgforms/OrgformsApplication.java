@@ -1,6 +1,7 @@
 package com.company.orgforms;
 
 import com.google.common.base.Strings;
+import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
@@ -17,6 +18,8 @@ import javax.sql.DataSource;
 
 @SpringBootApplication
 public class OrgformsApplication {
+
+    private static final Logger log = LoggerFactory.getLogger(OrgformsApplication.class);
 
     @Autowired
     private Environment environment;
