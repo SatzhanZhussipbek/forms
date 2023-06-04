@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://jmix.io/schema/ui/window"
+        xmlns:c="http://jmix.io/schema/ui/jpql-condition"
+        caption="msg://formBrowse.caption"
+        focusComponent="formsTable">
+    <data readOnly="true">
+        <collection id="formsDc"
+                    class="com.company.orgforms.entity.Form">
+            <fetchPlan extends="_base"/>
+            <loader id="formsDl">
+                <query>
+                    <![CDATA[select e from Form_ e]]>
+                </query>
+            </loader>
+        </collection>
+    </data>
+    <facets>
+        <dataLoadCoordinator auto="true"/>
+        <screenSettings id="settingsFacet" auto="true"/>
+    </facets>
+    <actions>
+        <action id="lookupSelectAction"
+                caption="msg:///actions.Select"
+                icon="LOOKUP_OK"
+                primary="true"
+                shortcut="${COMMIT_SHORTCUT}"/>
+        <action id="lookupCancelAction"
+                caption="msg:///actions.Cancel"
+                icon="LOOKUP_CANCEL"/>
+    </actions>
+    <dialogMode height="600"
+                width="800"/>
+    <layout expand="formsTable" spacing="true">
+        <filter id="filter"
+                dataLoader="formsDl">
+            <properties include=".*"/>
+        </filter>
+        <groupTable id="formsTable"
+                    width="100%"
+                    dataContainer="formsDc">
+            <actions>
+                <action id="create" type="create"/>
+                <action id="edit" type="edit"/>
+                <action id="remove" type="remove"/>
+            </actions>
+            <columns>
+                <column id="name"/>
+                <column id="dateOfBirth"/>
+                <column id="grade"/>
+                <column id="gender"/>
+                <column id="specialNeeds"/>
+                <column id="city"/>
+                <column id="district"/>
+                <column id="street"/>
+                <column id="house"/>
+                <column id="apartment"/>
+                <column id="contactNumber"/>
+                <column id="fatherName"/>
+                <column id="fatherBirthdate"/>
+                <column id="fatherAge"/>
+                <column id="fatherFamilyStatus"/>
+                <column id="fatherCity"/>
+                <column id="fatherDistrict"/>
+                <column id="fatherStreet"/>
+                <column id="fatherHouse"/>
+                <column id="fatherApartment"/>
+                <column id="motherName"/>
+                <column id="motherBirthdate"/>
+                <column id="motherAge"/>
+                <column id="motherFamilyStatus"/>
+                <column id="motherCity"/>
+                <column id="motherDistrict"/>
+                <column id="motherStreet"/>
+                <column id="motherHouse"/>
+                <column id="motherApartment"/>
+                <column id="stepParent"/>
+                <column id="otherName"/>
+                <column id="otherAge"/>
+                <column id="otherKinshipDegree"/>
+                <column id="otherWorkplace"/>
+                <column id="interviewDate"/>
+                <column id="intervieweeName"/>
+                <column id="interviewOrg"/>
+                <column id="relationToInterviewee"/>
+                <column id="intervieweeContact"/>
+                <column id="legalProblems"/>
+                <column id="attendance"/>
+                <column id="riskConflict"/>
+                <column id="earlyPregnancy"/>
+                <column id="disability"/>
+                <column id="hasHIV"/>
+                <column id="nutrition"/>
+                <column id="hasSeasonClothes"/>
+                <column id="noCaregiverRisk"/>
+                <column id="other"/>
+                <column id="childLabor"/>
+                <column id="domesticViolence"/>
+                <column id="childAbuse"/>
+                <column id="beenOrphan"/>
+                <column id="psychDisease"/>
+                <column id="exploitation"/>
+                <column id="religiousRadicalism"/>
+                <column id="conflictZone"/>
+                <column id="outsideFamily"/>
+                <column id="selfDamage"/>
+                <column id="riskyBehavior"/>
+                <column id="suicidal"/>
+                <column id="griefOfLoss"/>
+                <column id="bullying"/>
+                <column id="stressTrauma"/>
+                <column id="developmentalProblem"/>
+                <column id="weakSelfService"/>
+                <column id="psychEmotionalProblems"/>
+                <column id="otherProblems"/>
+                <column id="frequentAbsence"/>
+                <column id="badGrades"/>
+                <column id="healthAbsence"/>
+                <column id="lackOfProvision"/>
+                <column id="noFamilyControl"/>
+                <column id="noSchoolHelp"/>
+                <column id="rejectionOfHelp"/>
+                <column id="poorQualityOfHelp"/>
+                <column id="teacherParentConflict"/>
+                <column id="childTeacherConflict"/>
+                <column id="otherNotes"/>
+                <column id="largeFamily"/>
+                <column id="familyConflicts"/>
+                <column id="poorFamily"/>
+                <column id="parentsMigrantWorkers"/>
+                <column id="familyAlcoholProblem"/>
+                <column id="oldParents"/>
+                <column id="familyExConvict"/>
+                <column id="pregnantMothers"/>
+                <column id="homelessParents"/>
+                <column id="singleParentFamily"/>
+                <column id="lowEducation"/>
+                <column id="parentBeenOrphan"/>
+                <column id="weakParentalSkills"/>
+                <column id="lackOfSocialSupport"/>
+                <column id="attachmentDisorder"/>
+                <column id="socialIsolation"/>
+                <column id="divorced"/>
+                <column id="lackOfAccessToLocalService"/>
+                <column id="badHousing"/>
+                <column id="familyDiscriminated"/>
+                <column id="lackOfMedicine"/>
+                <column id="unemployedFamilyMember"/>
+                <column id="lackOfTransport"/>
+                <column id="familyWithHIV"/>
+                <column id="moneyProblems"/>
+                <column id="disabledParent"/>
+                <column id="supportOfViolence"/>
+                <column id="warzoneReturnee"/>
+                <column id="problemWithPsych"/>
+                <column id="radicalismOfParent"/>
+                <column id="otherFamilyProblems"/>
+                <column id="academicAchievement"/>
+                <column id="familyRules"/>
+                <column id="goodSocialSkills"/>
+                <column id="caringAdults"/>
+                <column id="proactiveInOwn"/>
+                <column id="supportiveFamily"/>
+                <column id="positiveAttitude"/>
+                <column id="otherIndividualFactors"/>
+                <column id="otherFamilialFactors"/>
+                <column id="secureAttachment"/>
+                <column id="economicStability"/>
+                <column id="caringParent"/>
+                <column id="employedParents"/>
+                <column id="stableFamily"/>
+                <column id="educatedParents"/>
+                <column id="goodParentalSkills"/>
+                <column id="goodHousing"/>
+                <column id="positiveFamily"/>
+                <column id="socialSupport"/>
+                <column id="basicNeeds"/>
+                <column id="medicalAccess"/>
+                <column id="stableRelationship"/>
+                <column id="resourceServiceCoordination"/>
+                <column id="otherEnvFactors"/>
+                <column id="safeSchool"/>
+                <column id="programsForParents"/>
+                <column id="extracurriculars"/>
+                <column id="inclusiveApproach"/>
+                <column id="availableNPA"/>
+                <column id="artCircleAvailable"/>
+                <column id="mentoring"/>
+                <column id="preventionPrograms"/>
+                <column id="otherSchoolFactors"/>
+                <column id="caseComments"/>
+                <column id="noRiskLevel"/>
+                <column id="noRiskStep1"/>
+                <column id="noRiskStep2"/>
+                <column id="noRiskStep3"/>
+                <column id="noRiskOther"/>
+                <column id="lowRiskLevel"/>
+                <column id="lowRiskLevelStep1"/>
+                <column id="lowRiskLevelStep2"/>
+                <column id="lowRiskLevelOther"/>
+                <column id="mediumRiskLevel"/>
+                <column id="mediumRiskLevelStep1"/>
+                <column id="mediumRiskLevelStep2"/>
+                <column id="mediumRiskOther"/>
+                <column id="highRiskLevel"/>
+                <column id="highRiskStep1"/>
+                <column id="highRiskStep2"/>
+                <column id="highRiskStep3"/>
+                <column id="highRiskStep4"/>
+                <column id="highRiskStep5"/>
+                <column id="highRiskStep6"/>
+                <column id="highRiskStepOther"/>
+            </columns>
+            <simplePagination/>
+            <buttonsPanel id="buttonsPanel"
+                          alwaysVisible="true">
+                <button id="createBtn" action="formsTable.create"/>
+                <button id="editBtn" action="formsTable.edit"/>
+                <button id="removeBtn" action="formsTable.remove"/>
+            </buttonsPanel>
+        </groupTable>
+        <hbox id="lookupActions" spacing="true" visible="false">
+            <button action="lookupSelectAction"/>
+            <button action="lookupCancelAction"/>
+        </hbox>
+    </layout>
+</window>

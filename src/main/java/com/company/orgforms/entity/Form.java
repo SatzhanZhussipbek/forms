@@ -253,8 +253,14 @@ public class Form {
     @Column(name = "POOR_QUALITY_OF_HELP")
     private Boolean poorQualityOfHelp;
 
+    @Column(name = "LOW_EDU_MOTIVATION")
+    private Boolean lowEduMotivation;
+
     @Column(name = "TEACHER_PARENT_CONFLICT")
     private Boolean teacherParentConflict;
+
+    @Column(name = "STUDENTS_CONFLICT")
+    private Boolean studentsConflict;
 
     @Column(name = "CHILD_TEACHER_CONFLICT")
     private Boolean childTeacherConflict;
@@ -314,7 +320,7 @@ public class Form {
     private Boolean divorced;
 
     @Column(name = "ACCESS_TO_SERVICE")
-    private Boolean accessToService;
+    private Boolean lackOfAccessToLocalService;
 
     @Column(name = "BAD_HOUSING")
     private Boolean badHousing;
@@ -433,8 +439,8 @@ public class Form {
     @Column(name = "PROGRAMS_FOR_PARENTS")
     private Boolean programsForParents;
 
-    @Column(name = "EXTRA_CURRICULARS")
-    private Boolean extraCurriculars;
+    @Column(name = "EXTRACURRICULARS")
+    private Boolean extracurriculars;
 
     @Column(name = "INCLUSIVE_APPROACH")
     private Boolean inclusiveApproach;
@@ -519,6 +525,22 @@ public class Form {
 
     @Column(name = "HIGH_RISK_STEP_OTHER")
     private String highRiskStepOther;
+
+    public Boolean getLowEduMotivation() {
+        return lowEduMotivation;
+    }
+
+    public void setLowEduMotivation(Boolean lowEduMotivation) {
+        this.lowEduMotivation = lowEduMotivation;
+    }
+
+    public Boolean getStudentsConflict() {
+        return studentsConflict;
+    }
+
+    public void setStudentsConflict(Boolean studentsConflict) {
+        this.studentsConflict = studentsConflict;
+    }
 
     public void setHasHIV(Boolean hasHIV) {
         this.hasHIV = hasHIV;
@@ -816,12 +838,12 @@ public class Form {
         this.inclusiveApproach = inclusiveApproach;
     }
 
-    public Boolean getExtraCurriculars() {
-        return extraCurriculars;
+    public Boolean getExtracurriculars() {
+        return extracurriculars;
     }
 
-    public void setExtraCurriculars(Boolean extraCurriculars) {
-        this.extraCurriculars = extraCurriculars;
+    public void setExtracurriculars(Boolean extracurriculars) {
+        this.extracurriculars = extracurriculars;
     }
 
     public Boolean getProgramsForParents() {
@@ -1112,12 +1134,12 @@ public class Form {
         this.badHousing = badHousing;
     }
 
-    public Boolean getAccessToService() {
-        return accessToService;
+    public Boolean getLackOfAccessToLocalService() {
+        return lackOfAccessToLocalService;
     }
 
-    public void setAccessToService(Boolean accessToService) {
-        this.accessToService = accessToService;
+    public void setLackOfAccessToLocalService(Boolean accessToService) {
+        this.lackOfAccessToLocalService = accessToService;
     }
 
     public Boolean getDivorced() {

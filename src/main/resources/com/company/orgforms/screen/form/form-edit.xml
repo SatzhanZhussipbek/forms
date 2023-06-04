@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://jmix.io/schema/ui/window"
+        caption="msg://formEdit.caption"
+        focusComponent="form">
+    <data>
+        <instance id="formDc"
+                  class="com.company.orgforms.entity.Form">
+            <fetchPlan extends="_base"/>
+            <loader/>
+        </instance>
+    </data>
+    <facets>
+        <dataLoadCoordinator auto="true"/>
+        <screenSettings id="settingsFacet" auto="true"/>
+    </facets>
+    <actions>
+        <action id="windowCommitAndClose" caption="msg:///actions.Ok"
+                icon="EDITOR_OK"
+                primary="true"
+                shortcut="${COMMIT_SHORTCUT}"/>
+        <action id="windowClose"
+                caption="msg:///actions.Close"
+                icon="EDITOR_CANCEL"/>
+    </actions>
+    <dialogMode height="600"
+                width="800"/>
+    <layout spacing="true" expand="scrollBox">
+        <scrollBox id="scrollBox" spacing="true">
+            <form id="form" dataContainer="formDc">
+                <column width="350px">
+                    <label value="msg://infoaboutchild.caption"> </label>
+                    <textField id="nameField" property="name"/>
+                    <dateField id="dateOfBirthField" property="dateOfBirth"/>
+                    <textField id="gradeField" property="grade"/>
+                    <textField id="genderField" property="gender"/>
+                    <textField id="specialNeedsField" property="specialNeeds"/>
+                    <textField id="cityField" property="city"/>
+                    <textField id="districtField" property="district"/>
+                    <textField id="streetField" property="street"/>
+                    <textField id="houseField" property="house"/>
+                    <textField id="apartmentField" property="apartment"/>
+                    <textField id="contactNumberField" property="contactNumber"/>
+                    <textField id="fatherNameField" property="fatherName"/>
+                    <dateField id="fatherBirthdateField" property="fatherBirthdate"/>
+                    <textField id="fatherAgeField" property="fatherAge"/>
+                    <textField id="fatherFamilyStatusField" property="fatherFamilyStatus"/>
+                    <textField id="fatherCityField" property="fatherCity"/>
+                    <textField id="fatherDistrictField" property="fatherDistrict"/>
+                    <textField id="fatherStreetField" property="fatherStreet"/>
+                    <textField id="fatherHouseField" property="fatherHouse"/>
+                    <textField id="fatherApartmentField" property="fatherApartment"/>
+                    <textField id="motherNameField" property="motherName"/>
+                    <dateField id="motherBirthdateField" property="motherBirthdate"/>
+                    <textField id="motherAgeField" property="motherAge"/>
+                    <textField id="motherFamilyStatusField" property="motherFamilyStatus"/>
+                    <textField id="motherCityField" property="motherCity"/>
+                    <textField id="motherDistrictField" property="motherDistrict"/>
+                    <textField id="motherStreetField" property="motherStreet"/>
+                    <textField id="motherHouseField" property="motherHouse"/>
+                    <textField id="motherApartmentField" property="motherApartment"/>
+                    <checkBox id="stepParentField" property="stepParent"/>
+                    <textField id="otherNameField" property="otherName"/>
+                    <textField id="otherAgeField" property="otherAge"/>
+                    <textField id="otherKinshipDegreeField" property="otherKinshipDegree"/>
+                    <textField id="otherWorkplaceField" property="otherWorkplace"/>
+                    <dateField id="interviewDateField" property="interviewDate"/>
+                    <textField id="intervieweeNameField" property="intervieweeName"/>
+                    <textField id="interviewOrgField" property="interviewOrg"/>
+                    <textField id="relationToIntervieweeField" property="relationToInterviewee"/>
+                    <textField id="intervieweeContactField" property="intervieweeContact"/>
+                    <checkBox id="legalProblemsField" property="legalProblems"/>
+                    <checkBox id="attendanceField" property="attendance"/>
+                    <checkBox id="riskConflictField" property="riskConflict"/>
+                    <checkBox id="earlyPregnancyField" property="earlyPregnancy"/>
+                    <checkBox id="disabilityField" property="disability"/>
+                    <checkBox id="hasHIVField" property="hasHIV"/>
+                    <checkBox id="nutritionField" property="nutrition"/>
+                    <checkBox id="hasSeasonClothesField" property="hasSeasonClothes"/>
+                    <checkBox id="noCaregiverRiskField" property="noCaregiverRisk"/>
+                    <textField id="otherField" property="other"/>
+                    <checkBox id="childLaborField" property="childLabor"/>
+                    <checkBox id="domesticViolenceField" property="domesticViolence"/>
+                    <checkBox id="childAbuseField" property="childAbuse"/>
+                    <checkBox id="beenOrphanField" property="beenOrphan"/>
+                    <checkBox id="psychDiseaseField" property="psychDisease"/>
+                    <checkBox id="exploitationField" property="exploitation"/>
+                    <checkBox id="religiousRadicalismField" property="religiousRadicalism"/>
+                    <checkBox id="conflictZoneField" property="conflictZone"/>
+                    <checkBox id="outsideFamilyField" property="outsideFamily"/>
+                    <checkBox id="selfDamageField" property="selfDamage"/>
+                    <checkBox id="riskyBehaviorField" property="riskyBehavior"/>
+                    <checkBox id="suicidalField" property="suicidal"/>
+                    <checkBox id="griefOfLossField" property="griefOfLoss"/>
+                    <checkBox id="bullyingField" property="bullying"/>
+                    <checkBox id="stressTraumaField" property="stressTrauma"/>
+                    <checkBox id="developmentalProblemField" property="developmentalProblem"/>
+                    <checkBox id="weakSelfServiceField" property="weakSelfService"/>
+                    <checkBox id="psychEmotionalProblemsField" property="psychEmotionalProblems"/>
+                    <textField id="otherProblemsField" property="otherProblems"/>
+                    <checkBox id="frequentAbsenceField" property="frequentAbsence"/>
+                    <checkBox id="badGradesField" property="badGrades"/>
+                    <checkBox id="healthAbsenceField" property="healthAbsence"/>
+                    <checkBox id="lackOfProvisionField" property="lackOfProvision"/>
+                    <checkBox id="noFamilyControlField" property="noFamilyControl"/>
+                    <checkBox id="noSchoolHelpField" property="noSchoolHelp"/>
+                    <checkBox id="rejectionOfHelpField" property="rejectionOfHelp"/>
+                    <checkBox id="poorQualityOfHelpField" property="poorQualityOfHelp"/>
+                    <checkBox id="teacherParentConflictField" property="teacherParentConflict"/>
+                    <checkBox id="childTeacherConflictField" property="childTeacherConflict"/>
+                    <textField id="otherNotesField" property="otherNotes"/>
+                    <checkBox id="largeFamilyField" property="largeFamily"/>
+                    <checkBox id="familyConflictsField" property="familyConflicts"/>
+                    <checkBox id="poorFamilyField" property="poorFamily"/>
+                    <checkBox id="parentsMigrantWorkersField" property="parentsMigrantWorkers"/>
+                    <checkBox id="familyAlcoholProblemField" property="familyAlcoholProblem"/>
+                    <checkBox id="oldParentsField" property="oldParents"/>
+                    <checkBox id="familyExConvictField" property="familyExConvict"/>
+                    <checkBox id="pregnantMothersField" property="pregnantMothers"/>
+                    <checkBox id="homelessParentsField" property="homelessParents"/>
+                    <checkBox id="singleParentFamilyField" property="singleParentFamily"/>
+                    <checkBox id="lowEducationField" property="lowEducation"/>
+                    <checkBox id="parentBeenOrphanField" property="parentBeenOrphan"/>
+                    <checkBox id="weakParentalSkillsField" property="weakParentalSkills"/>
+                    <checkBox id="lackOfSocialSupportField" property="lackOfSocialSupport"/>
+                    <checkBox id="attachmentDisorderField" property="attachmentDisorder"/>
+                    <checkBox id="socialIsolationField" property="socialIsolation"/>
+                    <checkBox id="divorcedField" property="divorced"/>
+                    <checkBox id="accessToServiceField" property="lackOfAccessToLocalService"/>
+                    <checkBox id="badHousingField" property="badHousing"/>
+                    <checkBox id="familyDiscriminatedField" property="familyDiscriminated"/>
+                    <checkBox id="lackOfMedicineField" property="lackOfMedicine"/>
+                    <checkBox id="unemployedFamilyMemberField" property="unemployedFamilyMember"/>
+                    <checkBox id="lackOfTransportField" property="lackOfTransport"/>
+                    <checkBox id="familyWithHIVField" property="familyWithHIV"/>
+                    <checkBox id="moneyProblemsField" property="moneyProblems"/>
+                    <checkBox id="disabledParentField" property="disabledParent"/>
+                    <checkBox id="supportOfViolenceField" property="supportOfViolence"/>
+                    <checkBox id="warzoneReturneeField" property="warzoneReturnee"/>
+                    <checkBox id="problemWithPsychField" property="problemWithPsych"/>
+                    <checkBox id="radicalismOfParentField" property="radicalismOfParent"/>
+                    <textField id="otherFamilyProblemsField" property="otherFamilyProblems"/>
+                    <checkBox id="academicAchievementField" property="academicAchievement"/>
+                    <checkBox id="familyRulesField" property="familyRules"/>
+                    <checkBox id="goodSocialSkillsField" property="goodSocialSkills"/>
+                    <checkBox id="caringAdultsField" property="caringAdults"/>
+                    <checkBox id="proactiveInOwnField" property="proactiveInOwn"/>
+                    <checkBox id="supportiveFamilyField" property="supportiveFamily"/>
+                    <checkBox id="positiveAttitudeField" property="positiveAttitude"/>
+                    <checkBox id="otherIndividualFactorsField" property="otherIndividualFactors"/>
+                    <textField id="otherFamilialFactorsField" property="otherFamilialFactors"/>
+                    <checkBox id="secureAttachmentField" property="secureAttachment"/>
+                    <checkBox id="economicStabilityField" property="economicStability"/>
+                    <checkBox id="caringParentField" property="caringParent"/>
+                    <checkBox id="employedParentsField" property="employedParents"/>
+                    <checkBox id="stableFamilyField" property="stableFamily"/>
+                    <checkBox id="educatedParentsField" property="educatedParents"/>
+                    <checkBox id="goodParentalSkillsField" property="goodParentalSkills"/>
+                    <checkBox id="goodHousingField" property="goodHousing"/>
+                    <checkBox id="positiveFamilyField" property="positiveFamily"/>
+                    <checkBox id="socialSupportField" property="socialSupport"/>
+                    <checkBox id="basicNeedsField" property="basicNeeds"/>
+                    <checkBox id="medicalAccessField" property="medicalAccess"/>
+                    <checkBox id="stableRelationshipField" property="stableRelationship"/>
+                    <checkBox id="resourceServiceCoordinationField" property="resourceServiceCoordination"/>
+                    <textField id="otherEnvFactorsField" property="otherEnvFactors"/>
+                    <checkBox id="safeSchoolField" property="safeSchool"/>
+                    <checkBox id="programsForParentsField" property="programsForParents"/>
+                    <checkBox id="extraCurricularsField" property="extraCurriculars"/>
+                    <checkBox id="inclusiveApproachField" property="inclusiveApproach"/>
+                    <checkBox id="availableNPAField" property="availableNPA"/>
+                    <checkBox id="artCircleAvailableField" property="artCircleAvailable"/>
+                    <checkBox id="mentoringField" property="mentoring"/>
+                    <checkBox id="preventionProgramsField" property="preventionPrograms"/>
+                    <textField id="otherSchoolFactorsField" property="otherSchoolFactors"/>
+                    <textField id="caseCommentsField" property="caseComments"/>
+                    <checkBox id="noRiskLevelField" property="noRiskLevel"/>
+                    <checkBox id="noRiskStep1Field" property="noRiskStep1"/>
+                    <checkBox id="noRiskStep2Field" property="noRiskStep2"/>
+                    <checkBox id="noRiskStep3Field" property="noRiskStep3"/>
+                    <textField id="noRiskOtherField" property="noRiskOther"/>
+                    <checkBox id="lowRiskLevelField" property="lowRiskLevel"/>
+                    <checkBox id="lowRiskLevelStep1Field" property="lowRiskLevelStep1"/>
+                    <checkBox id="lowRiskLevelStep2Field" property="lowRiskLevelStep2"/>
+                    <textField id="lowRiskLevelOtherField" property="lowRiskLevelOther"/>
+                    <checkBox id="mediumRiskLevelField" property="mediumRiskLevel"/>
+                    <checkBox id="mediumRiskLevelStep1Field" property="mediumRiskLevelStep1"/>
+                    <checkBox id="mediumRiskLevelStep2Field" property="mediumRiskLevelStep2"/>
+                    <textField id="mediumRiskOtherField" property="mediumRiskOther"/>
+                    <checkBox id="highRiskLevelField" property="highRiskLevel"/>
+                    <checkBox id="highRiskStep1Field" property="highRiskStep1"/>
+                    <checkBox id="highRiskStep2Field" property="highRiskStep2"/>
+                    <checkBox id="highRiskStep3Field" property="highRiskStep3"/>
+                    <checkBox id="highRiskStep4Field" property="highRiskStep4"/>
+                    <checkBox id="highRiskStep5Field" property="highRiskStep5"/>
+                    <checkBox id="highRiskStep6Field" property="highRiskStep6"/>
+                    <textField id="highRiskStepOtherField" property="highRiskStepOther"/>
+                </column>
+            </form>
+        </scrollBox>
+        <hbox id="editActions" spacing="true">
+            <button id="commitAndCloseBtn" action="windowCommitAndClose"/>
+            <button id="closeBtn" action="windowClose"/>
+        </hbox>
+    </layout>
+</window>
